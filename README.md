@@ -9,14 +9,13 @@
 
 ## Overview
 
-This is the official portfolio website of **Tarek Yahia**, a GIS Analyst specializing in smart urban planning, geospatial analysis, remote sensing, and environmental studies.
+This is the portfolio website of **Tarek Yahia**, a GIS Analyst specializing in geospatial analysis, remote sensing, and environmental studies.
 
 The site showcases:
 
 * Featured GIS & Remote Sensing projects
 * Resume and skills
 * Tools used (e.g., ArcGIS, QGIS, ENVI)
-* Bilingual support (English and Arabic)
 * Fully responsive layout for desktop and mobile
 * Theme toggling (Light/Dark) with animation
 * PWA support (installable on mobile and desktop)
