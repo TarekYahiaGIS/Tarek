@@ -1,0 +1,71 @@
+/* Base styles */
+.App {
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme */
+.App.light {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* Dark theme */
+.App.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Navbar styles */
+.navbar.light {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar.dark {
+  background-color: #1e1e1e !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .nav-link {
+  transition: color 0.2s ease;
+  color: var(--text-color) !important;
+}
+
+.navbar.light .nav-link {
+  color: var(--text-color) !important;
+}
+
+.navbar.dark .nav-link {
+  color: var(--text-color) !important;
+}
+
+/* Logo (if switching) */
+.logo {
+  transition: filter 0.3s ease;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
