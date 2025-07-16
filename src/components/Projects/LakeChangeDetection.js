@@ -12,6 +12,7 @@ import CH2021 from "../../Assets/Projects/CH2021.png";
 import C2021 from "../../Assets/Projects/C2021.png";
 import "../../style.css";
 import ReactGA from "react-ga";
+import { Helmet } from "react-helmet";
 
 function LakeChangeDetection() {
   useEffect(() => {
@@ -20,6 +21,21 @@ function LakeChangeDetection() {
 
   return (
     <Container fluid className="resume-section">
+      <Helmet>
+        <title>Manzala Lake Change Detection Project | Tarek Yahia – GIS Portfolio</title>
+        <meta
+          name="description"
+          content="Remote sensing project using Landsat data and ENVI to detect environmental changes in Manzala Lake between 1991–2021."
+        />
+        <meta property="og:title" content="Manzala Lake Change Detection | Tarek Yahia" />
+        <meta
+          property="og:description"
+          content="Time-series analysis of Manzala Lake using remote sensing to study lake shrinkage and human impact (1991–2021)."
+        />
+        <meta property="og:url" content="https://tarekyahia.site/lake-change-detection" />
+        <meta property="og:image" content="https://tarekyahia.site/preview.jpg" />
+      </Helmet>
+
       <Particle />
       <Container>
         <Row className="resume">
@@ -29,28 +45,28 @@ function LakeChangeDetection() {
             <Resumecontent
               title="Project Title"
               content={[
-                "Environmental Change Detection in Manzala Lake Using Multi-Temporal Landsat Imagery (1991–2021).",
+                "Environmental Change Detection in Manzala Lake Using Multi-Temporal Landsat Imagery (1991–2021)."
               ]}
             />
 
             <Resumecontent
               title="Project Summary"
               content={[
-                "This solo project focused on detecting environmental changes in Manzala Lake using Landsat 5 and Landsat 7 imagery from 1991 to 2021.",
-                "The ENVI 'Image Change Workflow' tool was used to assess how roads and water channels impacted the lake’s shape and area over time.",
-                "From 1991 to 2001: a 15.4% decrease in lake area, with only a 1% increase in some parts.",
-                "From 2011 to 2021: a 14.7% decrease, with just 0.1% increase.",
-                "Notable factors included nearby infrastructure like the Damietta–Port Said road and rising lake levels that sometimes eroded road edges.",
+                "This solo project aimed to detect environmental changes in Manzala Lake using Landsat 5 and 7 imagery spanning from 1991 to 2021.",
+                "The 'Image Change Workflow' tool in ENVI was used to assess how roads and drainage channels impacted the lake's shape and area.",
+                "From 1991–2001: a 15.4% reduction in lake area, with a slight 1% gain in other regions.",
+                "From 2011–2021: a 14.7% decrease in area, with negligible gains (~0.1%).",
+                "The changes were primarily influenced by infrastructure expansion—particularly the Damietta–Port Said road—and surrounding hydrological activity."
               ]}
             />
 
             <Resumecontent
               title="Project Focus"
               content={[
-                "Remote sensing change detection",
-                "Time-series analysis of lake shrinkage",
-                "Impact of infrastructure on natural water bodies",
-                "Using ENVI for environmental monitoring",
+                "Remote sensing and change detection",
+                "Time-series environmental monitoring",
+                "Lake morphology and shrinkage analysis",
+                "ENVI workflows and geospatial interpretation"
               ]}
             />
 
@@ -58,8 +74,8 @@ function LakeChangeDetection() {
               title="Programs and Tools Used"
               content={[
                 "ENVI (Image Change Workflow Tool)",
-                "Landsat 5 & 7 Imagery from USGS",
-                "Excel (for chart creation and comparison)",
+                "Landsat 5 & 7 imagery from USGS EarthExplorer",
+                "Microsoft Excel (for tabulation and charts)"
               ]}
             />
           </Col>
@@ -69,22 +85,17 @@ function LakeChangeDetection() {
 
             <h5 className="resume-title">Landsat Imagery Timeline</h5>
             <Row style={{ justifyContent: "center", paddingTop: "10px" }}>
-              {[
-                { src: L1991, alt: "Landsat 1991", label: "Manzala Lake - 1991" },
-                { src: L2001, alt: "Landsat 2001", label: "Manzala Lake - 2001" },
-                { src: L2011, alt: "Landsat 2011", label: "Manzala Lake - 2011" },
-                { src: L2021, alt: "Landsat 2021", label: "Manzala Lake - 2021" },
-              ].map((map, i) => (
+              {[L1991, L2001, L2011, L2021].map((img, i) => (
                 <Col key={i} md={6} sm={12} className="image-gallery">
                   <div className="map-hover compact-map">
-                    <a href={map.src} target="_blank" rel="noopener noreferrer">
+                    <a href={img} target="_blank" rel="noopener noreferrer">
                       <img
-                        src={map.src}
-                        alt={map.alt}
+                        src={img}
+                        alt={`Manzala Lake - ${1991 + i * 10}`}
                         className="img-fluid rounded map-img"
                       />
                     </a>
-                    <div className="overlay">{map.label}</div>
+                    <div className="overlay">{`Manzala Lake - ${1991 + i * 10}`}</div>
                   </div>
                 </Col>
               ))}
@@ -94,38 +105,24 @@ function LakeChangeDetection() {
               Change Detection Results
             </h5>
             <Row style={{ justifyContent: "center", paddingTop: "10px" }}>
-              {[
-                {
-                  src: C1991,
-                  alt: "Change 1991–2001",
-                  label: "Change in Manzala Lake (1991–2001)",
-                },
-                {
-                  src: CH1991,
-                  alt: "Chart 1991–2001",
-                  label: "Change Chart for Manzala Lake (1991–2001)",
-                },
-                {
-                  src: C2021,
-                  alt: "Change 2011–2021",
-                  label: "Change in Manzala Lake (2011–2021)",
-                },
-                {
-                  src: CH2021,
-                  alt: "Chart 2011–2021",
-                  label: "Change Chart for Manzala Lake (2011–2021)",
-                },
-              ].map((map, i) => (
+              {[C1991, CH1991, C2021, CH2021].map((img, i) => (
                 <Col key={i} md={6} sm={12} className="image-gallery">
                   <div className="map-hover compact-map">
-                    <a href={map.src} target="_blank" rel="noopener noreferrer">
+                    <a href={img} target="_blank" rel="noopener noreferrer">
                       <img
-                        src={map.src}
-                        alt={map.alt}
+                        src={img}
+                        alt={`Change Map ${i + 1}`}
                         className="img-fluid rounded map-img"
                       />
                     </a>
-                    <div className="overlay">{map.label}</div>
+                    <div className="overlay">
+                      {[
+                        "Change in Manzala Lake (1991–2001)",
+                        "Area Change Chart (1991–2001)",
+                        "Change in Manzala Lake (2011–2021)",
+                        "Area Change Chart (2011–2021)"
+                      ][i]}
+                    </div>
                   </div>
                 </Col>
               ))}

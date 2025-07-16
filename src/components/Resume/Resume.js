@@ -3,9 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import pdf from "../../Assets/TarekYahia_CV.pdf"; // replace with your actual path
+import pdf from "../../Assets/TarekYahia_CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import ReactGA from "react-ga";
+import { Helmet } from "react-helmet";
 
 function Resume() {
   useEffect(() => {
@@ -14,6 +15,20 @@ function Resume() {
 
   return (
     <Container fluid className="resume-section">
+      <Helmet>
+        <title>Resume | Tarek Yahia – GIS Analyst</title>
+        <meta
+          name="description"
+          content="View the resume of Tarek Yahia, a GIS Analyst skilled in ArcGIS, QGIS, remote sensing, and urban planning."
+        />
+        <meta property="og:title" content="Resume | Tarek Yahia – GIS Analyst" />
+        <meta
+          property="og:description"
+          content="Discover my professional background, GIS experience, skills, and education."
+        />
+        <meta property="og:url" content="https://tarekyahia.site/resume" />
+      </Helmet>
+
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
