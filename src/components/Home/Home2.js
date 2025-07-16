@@ -23,7 +23,7 @@ function Home2() {
               <br />
               I'm experienced with tools like
               <i>
-                <b className="purple"> ArcGIS, QGIS, AutoCAD, Google Earth Pro, and ENVI.</b>
+                <b className="purple"> ArcGIS, QGIS, AutoCAD, CityEngine, Google Earth Pro, and ENVI.</b>
               </i>
               <br />
               <br />
@@ -46,10 +46,7 @@ function Home2() {
         <Row>
           <Col md={12} className="home-about-social">
             <h1 style={{ color: "var(--text-color)" }}>FIND ME ON</h1>
-            <p style={{ color: "var(--text-color)" }}>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-<ul className="home-about-social-links">
+            <ul className="home-about-social-links">
   <li className="social-icons">
     <a
       href="https://github.com/TarekYahiaGIS"
