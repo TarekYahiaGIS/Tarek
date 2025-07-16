@@ -46,7 +46,7 @@ function Home2() {
         <Row>
           <Col md={12} className="home-about-social">
             <h1 style={{ color: "var(--text-color)" }}>FIND ME ON</h1>
-            <ul className="home-about-social-links">
+           <ul className="home-about-social-links">
   <li className="social-icons">
     <a
       href="https://github.com/TarekYahiaGIS"
