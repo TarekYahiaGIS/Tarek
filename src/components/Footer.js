@@ -32,7 +32,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/tarek-yahia1911"
+                href="https://www.linkedin.com/in/tarek-yahia-453608242"
                 style={{ color: 'white' }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ function Footer() {
             </li>
 <li className="social-icons">
   <a
-    href="mailto:tarekyahia.dev@gmail.com"
+    href="mailto:tarekyahiagis@gmail.com"
     style={{ color: 'white' }}
     target="_blank"
     rel="noopener noreferrer"
