@@ -1,6 +1,6 @@
-import React from 'react';
-import Card from 'react-bootstrap/Card';
-import { ImPointRight } from 'react-icons/im';
+import React from 'react'
+import Card from 'react-bootstrap/Card'
+import { ImPointRight } from 'react-icons/im'
 
 function AboutCard() {
   return (
@@ -8,30 +8,30 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: 'justify' }}>
-            Hi, I'm <span className="purple">Tarek Yahia</span> from <span className="black">Egypt</span>.<br />
-            I’m a <strong>GIS Analyst</strong> with a deep interest in geospatial technologies, remote sensing, and smart mapping solutions.
+            Hello! I'm <span className="purple">Tarek Yahia</span> from <span className="black">Egypt</span>.
+            <br />I'm a GIS Analyst with a strong background in geospatial technologies, remote sensing, and mapping solutions.
             <br />
             <br />
-            I’m passionate about blending <strong>data</strong>, <strong>geography</strong>, and <strong>technology</strong> to address real-world challenges through spatial analysis.
+            I'm passionate about combining data, geography, and technology to solve real-world problems.
             <br />
             <br />
-            Outside of work, I enjoy:
+            When I’m not mapping the world, here’s what I enjoy:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Exploring new GIS & mapping tools
+              <ImPointRight /> Exploring new mapping surveying tools
             </li>
             <li className="about-activity">
               <ImPointRight /> Watching football and analyzing matches (especially for FPL)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Learning and experimenting with the latest technologies
+              <ImPointRight /> Learning and experimenting with new tech
             </li>
           </ul>
         </blockquote>
       </Card.Body>
     </Card>
-  );
+  )
 }
 
-export default AboutCard;
+export default AboutCard
