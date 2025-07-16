@@ -4,8 +4,6 @@ import { AiFillGithub } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { MdEmail } from "react-icons/md";
 import { Link } from 'react-router-dom'
-
-
 function Footer() {
   const year = new Date().getFullYear()
   return (
