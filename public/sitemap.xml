@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
+  <url>
+    <loc>https://tarekyahia.site/</loc>
+    <lastmod>2025-07-16</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Projects Overview Page -->
+  <url>
+    <loc>https://tarekyahia.site/projects</loc>
+    <lastmod>2025-07-16</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Individual Project Pages -->
+  <url>
+    <loc>https://tarekyahia.site/smart-neighborhood</loc>
+    <lastmod>2025-07-16</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tarekyahia.site/lake-change-detection</loc>
+    <lastmod>2025-07-16</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://tarekyahia.site/hospital-suitability</loc>
+    <lastmod>2025-07-16</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Resume Page -->
+  <url>
+    <loc>https://tarekyahia.site/resume</loc>
+    <lastmod>2025-07-16</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://tarekyahia.site/about</loc>
+    <lastmod>2025-07-16</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>
