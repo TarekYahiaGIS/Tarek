@@ -19,7 +19,7 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Exploring new mapping surveying tools
+              <ImPointRight /> Exploring new mapping tools
             </li>
             <li className="about-activity">
               <ImPointRight /> Watching football and analyzing matches (especially for FPL)
